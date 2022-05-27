@@ -86,14 +86,15 @@ In 2 ways you can run the code
 * Using Command Line Arugment while running the file
 * Writing the Text File name while running the file
 
-Using Command Line Arugment:-
+### Using Command Line Arugment:-
 
 Just create your test_case_file.txt and run the main file with the test_case_file 
 
 Example: python main.py tc_1.txt
 
 
-Writing the Text File name while running the file: Just run the main file and when it ask for the file name just enter the test file name you have created
+### Writing the Text File name while running the file:-
+Just run the main file and when it ask for the file name just enter the test file name you have created
 
 (Make sure your main file should be present whereever you are running your testcase)
 
