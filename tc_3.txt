@@ -1,6 +1,6 @@
-PLACE 0 0 North Black
+PLACE 1 2 East Black
 MOVE 2
-LEFT
-RIGHT
 MOVE 1
+LEFT
+MOVE 
 REPORT
