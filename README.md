@@ -79,3 +79,17 @@ LEFT
 MOVE
 REPORT
 Output: 3,3,NORTH,BLACK
+
+
+# HOW TO RUN THE CODE? 
+In 2 ways you can run the code
+* Using Command Line Arugment while running the file
+* Writing the Text File name while running the file
+
+Using Command Line Arugment: Just create your test_case_file.txt and run the main file with the test_case_file 
+Example: python main.py tc_1.txt
+
+Writing the Text File name while running the file: Just run the main file and when it ask for the file name just enter the test file name you have created
+(Make sure your main file should be present whereever you are running your testcase)
+Example: python main.py  
+Enter the name of the input file [file should be present in current working directory]: tc_1.txt
