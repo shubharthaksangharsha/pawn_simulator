@@ -1,5 +1,6 @@
 #By Shubharthak Sangharasha,
 from typing import List, Tuple
+import sys
 
 class Board:
     '''Board class that contains board-blueprint'''
@@ -49,7 +50,7 @@ class Board:
         output: Tuple
         '''
         x, y = pawn_pos[0], pawn_pos[1]
-#        print(x, y)
+#        print(x, y, pawn_pos[2])
         if pawn_pos[2] == "East":
             x = x + X
         if pawn_pos[2] == "South":
@@ -78,6 +79,7 @@ class Board:
         elif self.counter != 0 and x > 1:
             print("Invalid Move")
         else:
+#            print(x)
             temp = self.move_translate(x, self.pawn_pos)
             self.prev_pos, self.cur_pos = self.cur_pos, temp[0:3]
  #           print(self.cur_pos)
@@ -152,6 +154,8 @@ def execute_input(input_list: List[str], myboard: Board) -> None:
             _, X, Y, F, C  = input
             myboard.place(int(X), int(Y), F, C)
         if 'move' in input[0] or 'MOVE' in input[0]:
+            if len(input) == 1:
+                input = ('MOVE', 1)
             _, x = input
             myboard.move(int(x))
         if 'left' in input or 'LEFT' in input:
@@ -165,5 +169,9 @@ def execute_input(input_list: List[str], myboard: Board) -> None:
 #Driver Code
 if __name__ == '__main__':
     myboard = Board()
-    input_list = take_input("pawn_input.txt")
+    if len(sys.argv[1:]) != 0:
+        input_list = take_input(sys.argv[1])
+    else:
+        file_input = input("Enter the name of the input file [file should be present in current working directory]: ")
+        input_list = take_input(file_input)
     execute_input(input_list, myboard)
