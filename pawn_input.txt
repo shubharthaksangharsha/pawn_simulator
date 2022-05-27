@@ -1,6 +1,0 @@
-PLACE 0 0 North Black
-MOVE 2
-LEFT
-RIGHT
-MOVE 1
-REPORT
