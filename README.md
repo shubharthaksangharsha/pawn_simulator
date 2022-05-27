@@ -103,4 +103,4 @@ Example: python main.py
 Enter the name of the input file [file should be present in current working directory]: tc_1.txt
 
 # TEST CASE 3 WRONG OUTPUT DIAGRAM: 
-https://excalidraw.com/#json=7MZ7qTmg2x7rNi0-8HUrF,ic3ytw35xNFNs05d83A-kw
+https://github.com/shubharthaksangharsha/pawn_simulator/blob/main/test_case3_diagram.svg
